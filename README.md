@@ -12,7 +12,8 @@ Author’s disclaimer
     - Guillaume
 
 Pycodestyle
-        Pycodestyle is now the new standard of Python style code (https://github.com/PyCQA/pycodestyle/issues/466)
+
+    Pycodestyle is now the new standard of Python style code (https://github.com/PyCQA/pycodestyle/issues/466)
         
 
 # More Info
