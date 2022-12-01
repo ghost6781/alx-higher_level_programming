@@ -489,7 +489,7 @@ Write the Python function def magic_calculation(a, b): that does exactly the sam
                   9 BINARY_POWER
                  10 BINARY_ADD
                  11 RETURN_VALUE
-Tip: Python bytecode
+Tip: [Python bytecode](https://alx-intranet.hbtn.io/rltoken/B38QeZHREbvgq-wY7Ze3vQ)
 
 Repo:
 
