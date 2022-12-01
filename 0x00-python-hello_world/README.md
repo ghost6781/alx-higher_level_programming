@@ -240,6 +240,8 @@ Requirements:
 
     Only these functions are allowed: write, printf, putchar, puts, malloc, free
 
+##
+
     carrie@ubuntu:~/0x00$ cat lists.h
     #ifndef LISTS_H
     #define LISTS_H
@@ -266,33 +268,35 @@ Requirements:
     int check_cycle(listint_t *list);
 
     #endif /* LISTS_H */
-    
-                    carrie@ubuntu:~/0x00$ cat 10-linked_lists.c
-                    #include <stdio.h>
-                    #include <stdlib.h>
-                    #include "lists.h"
 
-                    /**
-                     * print_listint - prints all elements of a listint_t list
-                     * @h: pointer to head of list
-                     * Return: number of nodes
-                     */
-                    size_t print_listint(const listint_t *h)
-                    {
-                        const listint_t *current;
-                        unsigned int n; /* number of nodes */
+###
 
-                        current = h;
-                        n = 0;
-                        while (current != NULL)
-                        {
-                            printf("%i\n", current->n);
-                            current = current->next;
-                            n++;
-                        }
+    carrie@ubuntu:~/0x00$ cat 10-linked_lists.c
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include "lists.h"
 
-                        return (n);
-                    }
+    /**
+    * print_listint - prints all elements of a listint_t list
+    * @h: pointer to head of list
+    * Return: number of nodes
+    */
+    size_t print_listint(const listint_t *h)
+    {
+    const listint_t *current;
+    unsigned int n; /* number of nodes */
+
+    current = h;
+    n = 0;
+    while (current != NULL)
+    {
+    printf("%i\n", current->n);
+    current = current->next;
+          n++;
+     }
+
+        return (n);
+        }
 
             /**
              * add_nodeint - adds a new node at the beginning of a listint_t list
@@ -332,7 +336,9 @@ Requirements:
                 }
             }
             
-            
+       
+###
+       
     carrie@ubuntu:~/0x00$ cat 10-main.c
     #include <stdlib.h>
     #include <string.h>
@@ -387,21 +393,22 @@ Requirements:
 
         return (0);
     }
+
+###
     
-    
-                    carrie@ubuntu:~/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 10-main.c 10-check_cycle.c 10-linked_lists.c -o cycle
-                    carrie@ubuntu:~/0x00$$ ./cycle 
-                    1024
-                    402
-                    98
-                    4
-                    3
-                    2
-                    1
-                    0
-                    Linked list has no cycle
-                    Linked list has a cycle
-                    carrie@ubuntu:~/0x00$
+     carrie@ubuntu:~/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 10-main.c 10-check_cycle.c 10-linked_lists.c -o cycle
+     carrie@ubuntu:~/0x00$$ ./cycle 
+     1024
+     402
+     98
+     4
+     3
+     2
+     1
+     0
+     Linked list has no cycle
+     Linked list has a cycle
+     carrie@ubuntu:~/0x00$
                     
 Solving a problem is already a big win! but finding the best and optimal way to solve it, it’s way better! Think about the most optimal / fastest way to do it.
 
@@ -411,82 +418,83 @@ Solving a problem is already a big win! but finding the best and optimal way to 
     Directory: 0x00-python-hello_world
     File: 10-check_cycle.c, lists.h
     
-11. Hello, write
-#advanced
-Score: 50.0% (Checks completed: 100.0%)
+## 11. Hello, write
+
 Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
 
 Use the function write from the sys module
 You are not allowed to use print
 Your script should print to stderr
 Your script should exit with the status code 1
-guillaume@ubuntu:~/py/0x00$ ./100-write.py
-and that piece of art is useful - Dora Korpar, 2015-10-19
-guillaume@ubuntu:~/py/0x00$ echo $?
-1
-guillaume@ubuntu:~/py/0x00$ ./100-write.py 2> q
-guillaume@ubuntu:~/py/0x00$ cat q
-and that piece of art is useful - Dora Korpar, 2015-10-19
-guillaume@ubuntu:~/py/0x00$ 
-Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 100-write.py
+    guillaume@ubuntu:~/py/0x00$ ./100-write.py
+    and that piece of art is useful - Dora Korpar, 2015-10-19
+    guillaume@ubuntu:~/py/0x00$ echo $?
+    1
+    guillaume@ubuntu:~/py/0x00$ ./100-write.py 2> q
+    guillaume@ubuntu:~/py/0x00$ cat q
+    and that piece of art is useful - Dora Korpar, 2015-10-19
+    guillaume@ubuntu:~/py/0x00$ 
+
+### Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x00-python-hello_world
+    File: 100-write.py
     
-12. Compile
-#advanced
-Score: 50.0% (Checks completed: 100.0%)
+## 12. Compile
+
 Write a script that compiles a Python script file.
 
 The Python file name will be stored in the environment variable $PYFILE
 
 The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output filename: my_main.pyc)
 
-guillaume@ubuntu:~/py/0x00$ cat main.py 
-#!/usr/bin/python3
-print("Best School")
+    guillaume@ubuntu:~/py/0x00$ cat main.py 
+    #!/usr/bin/python3
+    print("Best School")
 
-guillaume@ubuntu:~/py/0x00$ export PYFILE=main.py
-guillaume@ubuntu:~/py/0x00$ ./101-compile
-Compiling main.py ...
-guillaume@ubuntu:~/py/0x00$ ls
-101-compile  main.py  main.pyc
-guillaume@ubuntu:~/py/0x00$ cat main.pyc | zgrep -c "Best School"
-1
-guillaume@ubuntu:~/py/0x00$ od -t x1 main.pyc # SYSTEM DEPENDANT => CAN BE DIFFERENT
-0000000 ee 0c 0d 0a 91 26 3e 58 31 00 00 00 e3 00 00 00
-0000020 00 00 00 00 00 00 00 00 00 02 00 00 00 40 00 00
-0000040 00 73 0e 00 00 00 65 00 00 64 00 00 83 01 00 01
-0000060 64 01 00 53 29 02 7a 10 48 6f 6c 62 65 72 74 6f
-0000100 6e 20 53 63 68 6f 6f 6c 4e 29 01 da 05 70 72 69
-0000120 6e 74 a9 00 72 02 00 00 00 72 02 00 00 00 fa 07
-0000140 6d 61 69 6e 2e 70 79 da 08 3c 6d 6f 64 75 6c 65
-0000160 3e 02 00 00 00 73 00 00 00 00
-0000172
-guillaume@ubuntu:~/py/0x00$ 
-Repo:
+    guillaume@ubuntu:~/py/0x00$ export PYFILE=main.py
+    guillaume@ubuntu:~/py/0x00$ ./101-compile
+    Compiling main.py ...
+    guillaume@ubuntu:~/py/0x00$ ls
+    101-compile  main.py  main.pyc
+    guillaume@ubuntu:~/py/0x00$ cat main.pyc | zgrep -c "Best School"
+    1
+    guillaume@ubuntu:~/py/0x00$ od -t x1 main.pyc # SYSTEM DEPENDANT => CAN BE DIFFERENT
+    0000000 ee 0c 0d 0a 91 26 3e 58 31 00 00 00 e3 00 00 00
+    0000020 00 00 00 00 00 00 00 00 00 02 00 00 00 40 00 00
+    0000040 00 73 0e 00 00 00 65 00 00 64 00 00 83 01 00 01
+    0000060 64 01 00 53 29 02 7a 10 48 6f 6c 62 65 72 74 6f
+    0000100 6e 20 53 63 68 6f 6f 6c 4e 29 01 da 05 70 72 69
+    0000120 6e 74 a9 00 72 02 00 00 00 72 02 00 00 00 fa 07
+    0000140 6d 61 69 6e 2e 70 79 da 08 3c 6d 6f 64 75 6c 65
+    0000160 3e 02 00 00 00 73 00 00 00 00
+    0000172
+    guillaume@ubuntu:~/py/0x00$ 
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 101-compile
+### Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x00-python-hello_world
+    File: 101-compile
     
-13. ByteCode -> Python #1
-#advanced
-Score: 50.0% (Checks completed: 100.0%)
+## 13. ByteCode -> Python #1
+
 Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
 
-  3           0 LOAD_CONST               1 (98)
-              3 LOAD_FAST                0 (a)
-              6 LOAD_FAST                1 (b)
-              9 BINARY_POWER
-             10 BINARY_ADD
-             11 RETURN_VALUE
+      3           0 LOAD_CONST               1 (98)
+                  3 LOAD_FAST                0 (a)
+                  6 LOAD_FAST                1 (b)
+                  9 BINARY_POWER
+                 10 BINARY_ADD
+                 11 RETURN_VALUE
 Tip: Python bytecode
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 102-magic_calculation.py
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x00-python-hello_world
+    File: 102-magic_calculation.py
 
 
