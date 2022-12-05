@@ -55,15 +55,15 @@ Write a Python script that prints exactly "Programming is like building a multil
 
 ## 3. Print integer
 
-Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
+Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/master/3-print_number.py) in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
 
-You can find the source code here
+You can find the source code [here](https://github.com/holbertonschool/0x00.py/blob/master/3-print_number.py)
 The output of the script should be:
 the number, followed by Battery street,
 followed by a new line
 You are not allowed to cast the variable number into a string
 Your code must be 3 lines long
-You have to use f-strings tips
+You have to use f-strings [tips](https://alx-intranet.hbtn.io/rltoken/Ju0J8BxkuPX5yKZctyKfsQ)
 
     guillaume@ubuntu:~/py/0x00$ ./3-print_number.py
     98 Battery street
@@ -79,7 +79,7 @@ You have to use f-strings tips
 
 Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
 
-You can find the source code here
+You can find the source code [here](https://github.com/holbertonschool/0x00.py/blob/master/4-print_float.py)
 The output of the program should be:
 Float:, followed by the float with only 2 digits
 followed by a new line
@@ -98,9 +98,9 @@ You have to use f-strings
     
 ## 5. Print string
 
-Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/master/5-print_string.py) in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
 
-You can find the source code here
+You can find the source code [here](https://github.com/holbertonschool/0x00.py/blob/master/5-print_string.py)
 The output of the program should be:
 3 times the value of str
 followed by a new line
@@ -122,9 +122,9 @@ Your program should be maximum 5 lines long
     
 ## 6. Play with strings
 
-Complete this source code to print Welcome to Holberton School!
+Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/master/6-concat.py) to print Welcome to Holberton School!
 
-You can find the source code here
+You can find the source code [here](https://github.com/holbertonschool/0x00.py/blob/master/6-concat.py)
 You are not allowed to use any loops or conditional statements.
 You have to use the variables str1 and str2 in your new line of code
 Your program should be exactly 5 lines long
@@ -143,9 +143,9 @@ Repo:
     
 7. Copy - Cut - Paste
 
-Complete this source code
+Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/master/7-edges.py)
 
-You can find the source code here
+You can find the source code [here](https://github.com/holbertonschool/0x00.py/blob/master/7-edges.py)
 You are not allowed to use any loops or conditional statements
 Your program should be exactly 8 lines long
 word_first_3 should contain the first 3 letters of the variable word
@@ -168,9 +168,9 @@ middle_word should contain the value of the variable word without the first and 
     
 ## 8. Create a new sentence
 
-Complete this source code to print object-oriented programming with Python, followed by a new line.
+Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/master/8-concat_edges.py) to print object-oriented programming with Python, followed by a new line.
 
-You can find the source code here
+You can find the source code [here](https://github.com/holbertonschool/0x00.py/blob/master/8-concat_edges.py)
 You are not allowed to use any loops or conditional statements
 Your program should be exactly 5 lines long
 You are not allowed to create new variables
