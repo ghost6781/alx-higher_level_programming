@@ -129,9 +129,9 @@ Pycodestyle
 
 
 # 0x01. Python - if/else, loops, functions
-![]https://alx-intranet.hbtn.io/images/challenge2022/get-started.jpg
+![](https://alx-intranet.hbtn.io/images/challenge2022/get-started.jpg)
 
-![]https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/233/code.png
+![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/233/code.png)
 
 ## Resources
  Read or watch:
